@@ -1,0 +1,22 @@
+User-Agent: *
+Disallow: /page7040034.html
+Disallow: /header
+Disallow: /page7043325.html
+Disallow: /error
+Disallow: /page7043812.html
+Disallow: /footer
+Disallow: /tilda/form*
+Disallow: /tilda/rec*
+Disallow: /tilda/click*
+Disallow: /tilda/scroll*
+Disallow: /tilda/popup*
+Disallow: /tilda/cart*
+Disallow: /tilda/product*
+Disallow: /tilda/event*
+Disallow: /*_escaped_fragment_*
+Disallow:
+
+
+Sitemap: https://kseniya-panina.tilda.ws/sitemap.xml
+Sitemap: https://kseniya-panina.tilda.ws/sitemap-store.xml
+Host: https://kseniya-panina.tilda.ws

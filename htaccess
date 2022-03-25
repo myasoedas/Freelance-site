@@ -1,0 +1,47 @@
+ErrorDocument 403 /page7043325.html
+ErrorDocument 404 /page7043325.html
+
+DirectoryIndex page7029611.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^service$ page7045222.html [NC]
+RewriteRule ^service/$ page7045222.html [NC]
+
+RewriteRule ^otzivi-obo-mne$ page7052499.html [NC]
+RewriteRule ^otzivi-obo-mne/$ page7052499.html [NC]
+
+RewriteRule ^obo-mne$ page7050561.html [NC]
+RewriteRule ^obo-mne/$ page7050561.html [NC]
+
+RewriteRule ^header$ page7040034.html [NC]
+RewriteRule ^header/$ page7040034.html [NC]
+
+RewriteRule ^moi-kontakti$ page7052166.html [NC]
+RewriteRule ^moi-kontakti/$ page7052166.html [NC]
+
+RewriteRule ^policy$ page7043347.html [NC]
+RewriteRule ^policy/$ page7043347.html [NC]
+
+RewriteRule ^error$ page7043325.html [NC]
+RewriteRule ^error/$ page7043325.html [NC]
+
+RewriteRule ^spasibo-za-zakaz$ page7029950.html [NC]
+RewriteRule ^spasibo-za-zakaz/$ page7029950.html [NC]
+
+RewriteRule ^footer$ page7043812.html [NC]
+RewriteRule ^footer/$ page7043812.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild3331-6634-4764-a136-326330633465/favicon.ico [R=302,L]
+
+<IfModule mod_headers.c>
+	Header set X-Content-Type-Options nosniff
+	Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
